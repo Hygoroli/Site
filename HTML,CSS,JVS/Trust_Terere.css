@@ -1,0 +1,464 @@
+*{
+    padding:    0;
+    margin:     0;
+    box-sizing: border-box;
+}
+    
+/* Trust_Terere.css */
+
+/* Estilos gerais da página */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2; /* Cinza claro como cor de fundo */
+    color: #333; /* Cor do texto (preto) */
+    line-height: 1.6;
+}
+  
+  /* Estilo do cabeçalho */
+  /* Estilo dos links do menu de Home, Carrinho e Login */
+  
+div.menu-superior {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #333;
+    
+}
+
+.home img{
+  height: 10rem;
+  cursor: pointer;
+}
+
+.login img{ 
+  cursor: pointer;
+  padding-top: 1rem;
+  height: 2.5rem;
+  
+  
+}
+
+.carrinho img{
+  
+  padding-top: 1rem;
+  cursor: pointer;
+  height: 2.5rem;
+  margin-right: 1rem;
+  
+  
+}
+
+  .carrinho h4:hover{
+    color: #00b894;
+  }
+
+  .home h4:hover{
+    color: #00b894;
+  }
+
+  .login h4:hover{
+    color: #00b894;
+    
+  }
+
+  /* Barra de pesquisa */
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15rem;
+    
+    
+  }
+
+  .menu-superior-container{
+    width: 5rem;
+    display: flex;
+  }
+    
+  .search-input {
+    padding: 0.850rem; 
+    width: 50rem;  
+    border: none;
+    border-bottom: 1px solid #00b894;
+    outline: none;
+    font-size: 1rem;
+  }
+    
+  .search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+    
+  /* Banner */  
+ 
+  .banner-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner {
+    flex: 0 0 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.banner.show {
+    opacity: 1;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.0rem;
+    margin-bottom: 20px;
+}
+
+.banner-content a {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    padding: 1.0rem;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.banner-content a:hover {
+    background-color: #00b894;
+}
+
+/* Novo menu */
+
+.menu_geral {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: #333;
+}
+
+/* Botão */
+
+.dropdown-btn {
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  padding: 1rem;
+  background-color: #333;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-btn span:hover {
+  background-color: #555; /* Cor de fundo ao passar o mouse sobre os links */
+  color: #00b894;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+/* Estilos para os botões do menu */
+.menu_list_terere,
+.menu_list_chimarrao,
+.menu_list_bomba,
+.menu_list_garrafas,
+.menu_list_tabua,
+.menu_list_copo,
+.menu_list_cutelaria,
+.menu_list_bota,
+.menu_list_chapeu,
+.menu_list_cinto,
+.menu_list_roupa {
+    
+  padding: 1rem 1rem;
+  
+  
+}
+
+/* Estilos para o conteúdo dos menus */
+.dropdown-content {
+  display: none;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 1;
+  width: 10rem;
+  
+}
+
+/* Estilos para os itens do menu */
+
+.menu_list_terere a,
+.menu_list_chimarrao a,
+.menu_list_bomba a,
+.menu_list_garrafas a,
+.menu_list_tabua a,
+.menu_list_copo a,
+.menu_list_cutelaria a,
+.menu_list_bota a,
+.menu_list_chapeu a,
+.menu_list_cinto a,
+.menu_list_roupa a,
+.dropdown-content a {
+  color: #333;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  display: flex;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu_list_terere a:hover,
+.menu_list_chimarrao a:hover,
+.menu_list_bomba a:hover,
+.menu_list_garrafas a:hover,
+.menu_list_tabua a:hover,
+.menu_list_copo a:hover,
+.menu_list_cutelaria a:hover,
+.menu_list_bota a:hover,
+.menu_list_chapeu a:hover,
+.menu_list_cinto a:hover,
+.menu_list_roupa a:hover,
+.dropdown-content a:hover {
+  background-color: #555;
+  color: #00b894; /* Alterado para #00b894 */
+  
+}
+
+/* Mostrar o conteúdo do menu ao passar o mouse */
+.menu_list_terere:hover .dropdown-content,
+.menu_list_chimarrao:hover .dropdown-content,
+.menu_list_bomba:hover .dropdown-content,
+.menu_list_garrafas:hover .dropdown-content,
+.menu_list_tabua:hover .dropdown-content,
+.menu_list_copo:hover .dropdown-content,
+.menu_list_cutelaria:hover .dropdown-content,
+.menu_list_bota:hover .dropdown-content,
+.menu_list_chapeu:hover .dropdown-content,
+.menu_list_cinto:hover .dropdown-content,
+.menu_list_roupa:hover .dropdown-content {
+  display: block;
+}
+
+  /* Estilos das curiosidades */
+
+  .curiosidade-terere {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .curiosidade-chimarrao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .curiosidade-cutelaria {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para as imagens das redações */
+
+  .curiosidade-terere img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .curiosidade-chimarrao img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .curiosidade-cutelaria img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o conteúdo das redações (texto e título) */
+
+  .terere {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o título e o texto verticalmente */
+  }
+
+  .chimarrao {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o título e o texto verticalmente */
+  }
+
+  .cutelaria{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o título e o texto verticalmente */
+  }
+  
+  .terere h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+
+  .chimarrao h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+
+  .cutelaria h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    padding-right: 50px;
+  }
+  
+  /* Texto da Redação */
+
+  .texto-terere p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    border-left: 4px solid #00b894; /* Borda à esquerda com cor azul */
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .texto-chimarrao p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    border-left: 4px solid #00b894; /* Borda à esquerda com cor azul */
+    padding: 32px;
+    border-radius: 10px;
+  }
+
+  .texto-cutelaria p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    border-left: 4px solid #00b894; /* Borda à esquerda com cor azul */
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  /* Ajuste de espaçamento entre as redações */
+
+  .curiosidade-terere {
+    margin-bottom: 50px;
+  }
+
+  .curiosidade-chimarrao {
+    margin-bottom: 50px;
+  }
+
+  .curiosidade-cutelaria {
+    margin-bottom: 50px;
+  }
+  
+  /* Estilo do rodapé */
+  
+  footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo para os links do rodapé */
+  footer {
+    background-color: #131921;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  /* Estilo para o texto de contato */
+  footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a lista de links */
+  footer ul {
+    list-style: none;
+    padding-bottom: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  /* Estilo para os itens da lista de links */
+  footer li {
+    margin: 0 10px;
+  }
+  
+  /* Estilo para os links */
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 16px; /* Preenchimento interno dos links */
+    border-radius: 30px; /* Borda arredondada dos links */
+    
+  }
+  
+  /* Estilo para os links quando o mouse passa sobre eles */
+
+  
+  footer a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre os links */
+    color: #00b894;
+  }
+  
+  /* Estilo para o logotipo */
+  footer .logo {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    background-image: url("caminho/para/sua-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+  }
+  
